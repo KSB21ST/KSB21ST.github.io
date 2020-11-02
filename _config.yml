@@ -22,6 +22,8 @@ title: Monos
 email: 21superbaby@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Subin blog
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://KSB21ST.github.io/" # the base hostname & protocol for your site
 # baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://ejjoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: KSB21ST
@@ -36,8 +38,6 @@ plugins:
   - jekyll-feed
 category_dir: category/
 tag_dir: tag/
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "KSB21ST.github.io/" # the base hostname & protocol for your site
 
 # Exclude from processing.
 # The following items will not be processed, by default.
