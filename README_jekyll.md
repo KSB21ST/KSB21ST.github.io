@@ -9,6 +9,7 @@ permalink: /about/
 
 ### Interested Features
 - 해킹
+- 알고리즘 (ps)
 - React.js 개발
 - 프로그래밍 언어
 - 시스템
