@@ -16,6 +16,7 @@ categories: articles
 
  정리해서 말하자면 이 논문은 세 명의 플레이어들 사이의 네트워크 통신을 분석한 것이다. 고객, 가맹점 서버, 그리고 간편 결제 시스템 서버. 논문에서는 각각을 shopper(attacker), Target store(merchant), Caas(Cashier-as-a-Service) 라고 표현했다. 
  
+
  고객 부분이 조금 헷갈렸는데, 브라우저와 서버에 대한 개념이 제대로 안 잡혀서 그랬던 것 같다. 빈 브라우저에 가맹점 서버를 작동시킬 수 있는 uri를 치면 그제서야 브라우저에 가맹점 서버가 보내온 내용을 보여준다. 그러니까 고객 입장에서는 특정 물건에 대한 주문서를 가맹점으로부터 받아오려면 주문서를 요구하는 uri를 먼저 가맹점 서버로 보내야 하는 것이다. uri를 가맹점 서버로 보내는 방법은 브라우저에 uri를 치면 된다.
  
 ## Preview
@@ -69,17 +70,20 @@ categories: articles
 이 일련의 과정에서 중요하게 봐야 할 점은 uri에 포함되 argument이다. 중요한 argument 두 개가 바로 orderID와 gross amount이라고 할 수 있다.
 
 
+
 flaw and exploit - attacker는 RT2.a 과정에서 argument로 전달되는 gross amount를 바꿨다. 예시에서는 $17.76를 $1.76으로 바꿨다고 나와있다. 그럼에도 불구하고 주문은 성공적으로 완료되었고, 심지어 주문서에는 $17.76 이 결제되었다고 떴다. 아마도 NopCommerce에서는 RT3.a.a, RT3.a.b 에서 주문이 완료되었는지 확인할 때 gross amount를 확인하지 않고 orderID로만 확인하는 모양이다. 또한, 구매 완료창을 RT3.b 에서 보내줄 때 RT3.a.b 에서 받은 gross amount가 아닌 데이터베이스에 존재하는 상품 가격을 쓰고 있을 가능성이 크다.
 
 
+
 이 attack을 예방하는 방법은 아마도 RT3.a.b 에서 받은 orderID와 gross amount를 모두 검증하는 것이다. gross amount가 틀리면 주문 승인을 하지 않는 식으로 말이다.
+
 
 
 그 외 모델들과 이를 공격하는 방식도 매우 흥미롭다. 사실 뒤로 갈 수록 더욱 더 복잡해진다. 예를 들자면 merchant에서 shopper에게 결제를 요구하기 위해 response로 주는 redirect URL을 shopper(attacker)가 만든 가상의 merchant의 주소로 바꿔치기 하는 것이다. 그런데 CaaS는 redirect URL은 확인하지 않고 orderID와 gross amount만 확인하기 때문에 결제가 되었다고 생각한다. 그리고 orderID에 대해 승인되었다고 merchant 에게 알린다.
 그러니까 여기서 문제는, CaaS는 merchant1에게 "merchant2의 1234번 상품에 대해 결제를 승인했어" 라고 말했는데, merchant1은 당연히 자신의 상점에 있는 1234번 상품에 대한 내용이라고 생각하고 shopper에게 구매 완료를 승인해주는 것이다. 정작 shopper는 엉뚱한 merchant, 이를테면 자신이 등록한 merchant에게 지불했기 때문에 merchant1은 돈을 받지 못한다.
 
 
-###### <a id="amazonsdk"></a>
+###### <a id="amamzonsdk"></a>
 ### Amazon SDK
 
-
+Amazon은 CaaS의 일종이라고 볼 수 있다. 
