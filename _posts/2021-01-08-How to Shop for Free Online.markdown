@@ -48,4 +48,4 @@ categories: articles
 ## NopCommerce 
 ###### <a id="Nop_PayPal"></a>
 ### PayPal Express
-![image](https://user-images.githubusercontent.com/58674914/103984517-a47f9380-51ca-11eb-8467-2cb2ade56fe6.png){: width="20%" height="20%"}
+![image](https://user-images.githubusercontent.com/58674914/103984517-a47f9380-51ca-11eb-8467-2cb2ade56fe6.png){: width="10%" height="10%"}
