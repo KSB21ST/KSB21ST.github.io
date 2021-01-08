@@ -21,7 +21,7 @@ categories: articles
  다시 첫 번째 부분을 보면, 크게 네 파트로 나눌 수 있다. NopCommerce 허점 분석, Interspire 허점 분석, Amazon SDK 허점 분석, closed source 상점 두 개의 허점 분석(Buy.com, JR.com).
  첫 두 파트를 더 세부적으로 나누자면 NopCommerce를 이용한 허점 두 가지(각각 PayPal, Amazon 결제 서비스 연동), Interspired의 허점 분석(각각 PayPal Express, PayPal Standard, Google Checkout, Amazon Simple Pay 연동)으로 볼 수 있다. 
 
- - [NopCommerce](#NopCommerce)
+ - NopCommerce
 	 - [PayPal Standard](#Nop_PayPal)
 	 - Amazon simple pay
  - Interspire
@@ -31,6 +31,8 @@ categories: articles
 	 - Amazon Simple Pay
  - Amazon SDK
  - closes source
+
+ 이 중에서 첫 번째 모델(NopCommerce - PayPal Standard)만 설명하고, 나머지는 간단하게 설명하고 넘어가겠다.
 
  논문의 Attacker 모델은 merchant(가맹점)과 Caas(간편결제서비스)가 공개하는 web API에 argument를 바꿔서 넣거나 변형하는 방법이다. 결제를 할 때 보안을 위해 확인해야 할 것은 다음과 같다:
  
@@ -44,8 +46,18 @@ categories: articles
 
 한계점은 CaaS가 오픈소스가 아니라는 점이다. 따라서 CaaS가 외부로 보내는 신호와 받는 신호만 분석할 수 있고, CaaS 내부의 코드는 알 수 없다. 이를 논문에서는 CaaS를 blackbox로 두고 연구를 진행했다고 표현했다.
 
-###### chp1 <a id="NopCommerce"></a>
-## NopCommerce 
+기본적인 규칙을 설명하자면 https 프로토콜에는 request와 response가 있다. origin 사이트에서 target 사이트로 request를 보내면, target에서 origin으로 응답 response를 주는 셈이다. 이 논문에서 request는 a로, request는 b로 표현했다. 그리고 한 번의 통신을 각각 RT1, RT2, ... 이렇게 두었다. RT1.a.a는 RT1.a 바로 다음에 RT1.b 가 생성되기 전에 진행되는 요청이다. 그러니까 RT1.a -> RT1.a.a -> RT1.a.b -> RT1.b -> RT2.a -> RT2.b -> ... 이런식으로 생각할 수 있다.
+
+
 ###### <a id="Nop_PayPal"></a>
-### PayPal Express
+### NopCommerce - PayPal Express
 ![image](https://user-images.githubusercontent.com/58674914/103984517-a47f9380-51ca-11eb-8467-2cb2ade56fe6.png){: width="10%" height="10%"}
+
+아직 github blog가 미숙해서 이미지 크기 조절하는 방법을 모르겠다. 검색해서 하는데도 잘 안된다.
+ 아무튼 기본적인 구조를 보면 
+ 1. shopper - merchant 에서 shopper는 구매 버튼을 누르면 merchant는 결제창 주소로 응답
+ 2. shopper - CaaS 에서 shopper는 결제창에서 결제를 하고 CaaS는 merchant에서 구매 완료창 주소로 응답
+ 3. shopper - merchant 에서 shopper는 구매 완료창으로 이동한다.
+ 4. merchant - CaaS 에서 아직 shopper는 구매 완료를 확인한 상태가 아니다. merchant에서 CaaS 로 가맹점 identity를 보내면 CaaS는 이에 대한 확인을 하고 응답으로 orderID, gross amount를 보낸다.
+ * 여기서 gross amount란 계산한 총 금액을 뜻한다.
+ 
