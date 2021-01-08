@@ -51,13 +51,20 @@ categories: articles
 
 ###### <a id="Nop_PayPal"></a>
 ### NopCommerce - PayPal Express
-![image](https://user-images.githubusercontent.com/58674914/103984517-a47f9380-51ca-11eb-8467-2cb2ade56fe6.png){: width="10%" height="10%"}
+![image](https://user-images.githubusercontent.com/58674914/103984517-a47f9380-51ca-11eb-8467-2cb2ade56fe6.png){: width="40%" height="40%"}
 
-아직 github blog가 미숙해서 이미지 크기 조절하는 방법을 모르겠다. 검색해서 하는데도 잘 안된다.
  아무튼 기본적인 구조를 보면 
  1. shopper - merchant 에서 shopper는 구매 버튼을 누르면 merchant는 결제창 주소로 응답
  2. shopper - CaaS 에서 shopper는 결제창에서 결제를 하고 CaaS는 merchant에서 구매 완료창 주소로 응답
  3. shopper - merchant 에서 shopper는 구매 완료창으로 이동한다.
  4. merchant - CaaS 에서 아직 shopper는 구매 완료를 확인한 상태가 아니다. merchant에서 CaaS 로 가맹점 identity를 보내면 CaaS는 이에 대한 확인을 하고 응답으로 orderID, gross amount를 보낸다.
  * 여기서 gross amount란 계산한 총 금액을 뜻한다.
+
+이 일련의 과정에서 중요하게 봐야 할 점은 uri에 포함되 argument이다. 중요한 argument 두 개가 바로 orderID와 gross amount이라고 할 수 있다.
+
+flaw and exploit - attacker는 RT2.a 과정에서 argument로 전달되는 gross amount를 바꿨다. 예시에서는 $17.76를 $1.76으로 바꿨다고 나와있다. 그럼에도 불구하고 주문은 성공적으로 완료되었고, 심지어 주문서에는 $17.76 이 결제되었다고 떴다. 아마도 NopCommerce에서는 RT3.a.a, RT3.a.b 에서 주문이 완료되었는지 확인할 때 gross amount를 확인하지 않고 orderID로만 확인하는 모양이다. 또한, 구매 완료창을 RT3.b 에서 보내줄 때 RT3.a.b 에서 받은 gross amount가 아닌 데이터베이스에 존재하는 상품 가격을 쓰고 있을 가능성이 크다.
+
+이 attack을 예방하는 방법은 아마도 RT3.a.b 에서 받은 orderID와 gross amount를 모두 검증하는 것이다. gross amount가 틀리면 주문 승인을 하지 않는 식으로 말이다.
+
+
  
