@@ -36,7 +36,9 @@ categories: articles
 	 - Google Checkout
 	 - Amazon Simple Pay
  - [Amazon SDK](#amamzonsdk)
- - closes source
+ - [closed source](#closed_source)
+	- Buy.com
+	- JR.com
 
  이 중에서 첫 번째 모델(NopCommerce - PayPal Standard)만 설명하고, 나머지는 간단하게 설명하고 넘어가겠다.
 
@@ -104,3 +106,13 @@ merchant는 https://cert.foo.com/PKICert.pem 이 Amazon certificate server라고
 이런 문제가 생긴 이유는 C* 를 검증할 때 certificate URL 이 가리키는 server에서 검증하기 때문이다. 말하자면 C* 를 검증하기 위해서는 Amazon certificate server에서 검증해야 하는데, 이 주소가 certificate URL 이니 여기서 검증하자는 것이다. 그런데 문제는 A* 을 검증할 때 attacker가 설정한 attacker의 server로 가서 A* 를 검증하면 당연히 아무 문제 없이 인증될 것이다.
 
 Amazon certificate 이 인정이 되게 되면 merchant는 attacker가 보내는 url을 Amazon이 보내준 것으로 착각하게 된다. 그렇다면 결제 인증이 되었다는 url, 또는 해당 금액을 결제했다는 내용 등등 모두를 merchant는 아무런 의심 없이 믿게 된다.
+
+
+###### <a id="closed_source"></a>
+### Closed Sources
+
+이 부분 같은 경우는 앞서 밝혀냈던 attack 수법들을 이용해서 attack할 수 있다는 것을 추측한다. 실제로 실험해본 결과 attack에 성공했다. 
+
+Buy.com 같은 경우는 interspire의 PayPal Express에서와 경우가 비슷하다. 간단하게 설명하자면 OrderID를 바꿔치는 것인데, 두 개의 다른 브라우저에서 merchant 서버로 동시에 접속을 한다. 그리고 싼 상품을 결제한다. 그런데 결제 완료를 완전히 하기 위해서는 한 번 더 다른 페이지로 '결제완료'버튼을 누르고 shopper가 이동해야 하는데, 그러지 않고 결제창에 머물러 있는 것이다. 그리고 다른 비싼 상품의 결제창에 접속한다. 그러나 결제하지 않고 바로 결제 완료 버튼을 누르면, 결제 실패 등등의 메시지가 뜨겠지만 이 상품에 대한 orderID가 노출된다. 이렇게 획득한 orderID를 이전에 켜놓았던 싼 상품의 결제창의 orderID와 바꿔치기하고 '결제완료' 버튼을 누르면, merchant는 비싼 상품에 대해 구매가 완료되었다고 인식한다.
+
+이런 문제가 생기는 이유는 
