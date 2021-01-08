@@ -80,10 +80,27 @@ flaw and exploit - attacker는 RT2.a 과정에서 argument로 전달되는 gross
 
 
 그 외 모델들과 이를 공격하는 방식도 매우 흥미롭다. 사실 뒤로 갈 수록 더욱 더 복잡해진다. 예를 들자면 merchant에서 shopper에게 결제를 요구하기 위해 response로 주는 redirect URL을 shopper(attacker)가 만든 가상의 merchant의 주소로 바꿔치기 하는 것이다. 그런데 CaaS는 redirect URL은 확인하지 않고 orderID와 gross amount만 확인하기 때문에 결제가 되었다고 생각한다. 그리고 orderID에 대해 승인되었다고 merchant 에게 알린다.
+
 그러니까 여기서 문제는, CaaS는 merchant1에게 "merchant2의 1234번 상품에 대해 결제를 승인했어" 라고 말했는데, merchant1은 당연히 자신의 상점에 있는 1234번 상품에 대한 내용이라고 생각하고 shopper에게 구매 완료를 승인해주는 것이다. 정작 shopper는 엉뚱한 merchant, 이를테면 자신이 등록한 merchant에게 지불했기 때문에 merchant1은 돈을 받지 못한다.
 
 
 ###### <a id="amamzonsdk"></a>
 ### Amazon SDK
 
-Amazon은 CaaS의 일종이라고 볼 수 있다. 
+Amazon은 CaaS의 일종이라고 볼 수 있다. merchant들은 자신의 쇼핑몰을 설계할 때 서버에 Amazon API를 이용하여 Amazon 구매 버튼을 설치할 수 있다. 그런데 여기서 merchant가 Amazon과 HTTP요청을 주고받을 때 Amazon으로부터 받은 request 또는 response가 맞는지 확인하기 위해 signature verification API라는 것을 사용한다.
+간단하게 말하면, Amazon은 이런 url을 merchant에게 보낸다:
+
+![image](https://user-images.githubusercontent.com/58674914/103989810-9bdf8b00-51d3-11eb-9922-fedd4fecab85.png){: width="20%" height="20%"}
+
+여기서 certificate URL은 Amazon certificate server의 주소이고, 위에 달려 있는 C*은 Amazon이 sign 한 것으로 sign 된 uri는 외부의 attacker가 통신 과정에서 url 을 변경할 수 없다. 이 부분에 대해서 공부하는 중이지만 sign됐는지 알려면 헤더를 확인하면 되는 것 같다. Amazon certificate server 에서는 Amazon의 public key certificate을 제공한다.
+
+그런데 문제는 C*을 아무도 검증하지 않는다는 것이다. 그러니까 attacker가 이렇게 새로운 url을 merchant에게 보냈을 때
+
+![image](https://user-images.githubusercontent.com/58674914/103990293-4fe11600-51d4-11eb-8efb-97846d4488b3.png){: width="20%" height="20%"}
+
+merchant는 https://cert.foo.com/PKICert.pem 이 Amazon certificate server라고 아무 의심 없이 받아들이게 된다.
+
+
+이런 문제가 생긴 이유는 C* 를 검증할 때 certificate URL 이 가리키는 server에서 검증하기 때문이다. 말하자면 C* 를 검증하기 위해서는 Amazon certificate server에서 검증해야 하는데, 이 주소가 certificate URL 이니 여기서 검증하자는 것이다. 그런데 문제는 A* 을 검증할 때 attacker가 설정한 attacker의 server로 가서 A* 를 검증하면 당연히 아무 문제 없이 인증될 것이다.
+
+Amazon certificate 이 인정이 되게 되면 merchant는 attacker가 보내는 url을 Amazon이 보내준 것으로 착각하게 된다. 그렇다면 결제 인증이 되었다는 url, 또는 해당 금액을 결제했다는 내용 등등 모두를 merchant는 아무런 의심 없이 믿게 된다.
