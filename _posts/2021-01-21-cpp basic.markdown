@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "c++ preview"
+date:   2021-01-21 19:31:29 +0900
+categories: C/C++
+---
+참고 강좌
+
+[C++lecture][C++lecture]
+[C++TCP school](http://www.tcpschool.com/cpp/cpp_intro_program)
+
+c/c++ 보다는 java나 python을 많이 썼기 때문에 많이 생소했다. java는 eclipse, python은 pycharm 으로 했었는데 새로운 IDE를 또 설치하려는 게 귀찮아서 그냥 vs code에 c/c++ 플러그인 설치해주기로 했다.
+
+우선 환경을 만들어주기 위해 vs code 와 MinGW 컴파일러를 설치했다. vs code C++ 플러그인을 설치해주고 MinGW 연결을 위해 task.json을 만들어주는데 생각보다 애를 먹었다. 무슨 일에서인지 환경 변수에 cmd 가 등록되어 있지 않아서 등록해주는데 대체 왜 설정이 안되어있는지 모르겠다.
+
+task.json에 들어갈 코드는 인터넷에 검색해보면 여러 사이트에서 알려준다. 특이하게도 주석까지도 똑같았는데 어디서 나온 소스인지 모르겠다.
+
+그 외에도 ctrl + shift + p 눌러서 C/C++: Edit Configurations 라는 걸 해줘야 작동이 되었는데 거기에 
+
+```
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "browse": {
+                "path": [
+                    "C:/MinGW/lib/gcc/mingw32/6.3.0/include",
+                    "C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed",
+                    "C:/MinGW/include/*",
+                    "${workspaceRoot}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}
+
+```
+
+라고 적어줘야 한다.
+
+
+- C++은 객체 지향형 프로그래밍
+- C는 <stdio.h>, C++은 <iostream> 을 쓴다.
+- 입력은 cin, 출력은 cout 이다. cin, cout는 std 라는 namespace 안의 class(객체) 인데 using namepace std; 를 앞에 써주면 std::cout 로 쓸 필요가 없다.
+
+```
+#include<iostream>
+
+using namespace std;
+int main()
+{
+    int i;
+    cout << "write ";
+    cin >> i;
+    cout << i << endl;
+    cout << "write " << i << " and print it";
+}
+
+```
+
+
+[C++lecture]: https://www.youtube.com/watch?v=JoAdRwJi-GI
