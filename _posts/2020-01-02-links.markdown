@@ -25,6 +25,7 @@ category: others
 
 
 [ps를 공부하는 방법](https://subinium.github.io/how-to-study-problem-solving/)
+[ps 강좌](https://blog.encrypted.gg/category/%EA%B0%95%EC%A2%8C)
 
 - card news
 
