@@ -17,7 +17,7 @@ projects:
     selected: y
 
   - title: "Bank Of Wine Internal Payment System"
-    image: "/assets/projects/2022_bof/logo.png"
+    image: "/assets/logos/wine_bottle.png"
     authors: "<b>Subin Kim</b>"
     venue: "Bank Of Wine Intern Project summer 2022"
     code: "https://github.com/KSB21ST/antD_bankofwine"
