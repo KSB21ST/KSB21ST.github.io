@@ -3,13 +3,13 @@ experiences:
   time: "Mar. 2023 - Feb. 2025 (expected)"
   title: "M.S. in School of Computing"
   subtitle: "MLML Lab"
-  category: "work"
+  category: "school"
 
 - place: "KAIST DS Lab"
   time: "July. 2022 - Jan. 2023"
   title: "Research Intern"
   subtitle: "Abstraction and Reasoning Corpus"
-  category: "work"
+  category: "school"
 
 - place: "Bank of Wine"
   time: "June. 2022 - Aug. 2022"
@@ -21,13 +21,13 @@ experiences:
   time: "Dec. 2021 - June. 2022"
   title: "Research Intern"
   subtitle: "Graph Nueral Networks (GNN)"
-  category: "work"
+  category: "school"
 
 - place: "KAIST PROSYS Lab"
   time: "June. 2021 - Sep. 2021"
   title: "Research Intern"
   subtitle: "software vulnerability detection"
-  category: "work"
+  category: "school"
 
 - place: "RedWit"
   time: "June. 2021 - Aug. 2021"
@@ -39,7 +39,7 @@ experiences:
   time: "Jan. 2021 - June. 2021"
   title: "Research Intern"
   subtitle: "spatio-temporal neural network"
-  category: "work"
+  category: "school"
 
 - place: "KAIST"
   time: "March. 2018 - Feb. 2023"
