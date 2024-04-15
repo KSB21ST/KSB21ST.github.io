@@ -7,7 +7,7 @@ projects:
   - title: "NMix Q-learning: Investigating overestimation bias of Q-values"
     image: "/assets/projects/2023_NMix/fig.png"
     authors: "<b>Subin Kim</b>, Kyungwook Nam, Doojin Baek"
-    venue: "Deep Reinforcement Learning (Spring 2023) (A+)"
+    venue: "Deep Reinforcement Learning (Spring 2023) <b>(A+)</b>"
     proposal: "/assets/projects/2023_NMix/proposal.pdf"
     paper_pdf: "/assets/projects/2023_NMix/paper.pdf"
     slides: "/assets/projects/2023_NMix/slides.pdf"
@@ -15,3 +15,14 @@ projects:
     code: "https://github.com/KSB21ST/cs492_project"
     skill: ""
     selected: y
+
+  - title: "Open Dialogue Generation based on knowledge graph"
+    image: "/assets/projects/2022_knowledge_graph/fig.png"
+    authors: "<b>Subin Kim</b>, Jinhyuk Jang, Sihyeon Kim, Duri Lee"
+    venue: "Introduction to Artificial Intelligence (Spring 2022) (S)"
+    proposal: "https://docs.google.com/presentation/d/1r8gKr_ewrQH0qXoVs1mE-YjFCSSZxSOV/edit#slide=id.p1"
+    paper_pdf: "/assets/projects/2022_knowledge_graph/paper.pdf"
+    slides: "/assets/projects/2022_knowledge_graph/slides.pdf"
+    video: "https://youtu.be/8bLVMHy6XJ0"
+    skill: ""
+    selected: n
