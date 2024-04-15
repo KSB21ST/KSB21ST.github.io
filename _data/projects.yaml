@@ -26,3 +26,13 @@ projects:
     video: "https://youtu.be/8bLVMHy6XJ0"
     skill: ""
     selected: n
+  
+  - title: "Improving Directed Greybox Fuzzing using Monte-Carlo Decision Tree and Ant Colony Optimization"
+    image: "/assets/projects/2021_fuzzing/fig.png"
+    authors: "Taeeun Kim, <b>Subin Kim</b>, Geonho Koh, and Sungsoo Han"
+    venue: "Artificial Intelligence Based Software Engineering (Fall 2021) <b>(A+)</b>"
+    paper_pdf: "/assets/projects/2021_fuzzing/paper.pdf"
+    slides: "https://docs.google.com/presentation/d/1Sv1OzT0UmHRzG5jWiUAyTqIYtN_Zd18I/edit#slide=id.p1"
+    code: "https://github.com/KSB21ST/FuzzFrame"
+    skill: ""
+    selected: y
