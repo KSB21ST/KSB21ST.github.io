@@ -16,6 +16,14 @@ projects:
     skill: ""
     selected: y
 
+  - title: "Bank Of Wine Internal Payment System"
+    image: "/assets/projects/2022_bof/logo.png"
+    authors: "<b>Subin Kim</b>"
+    venue: "Bank Of Wine Intern Project summer 2022"
+    code: "https://github.com/KSB21ST/antD_bankofwine"
+    skill: ""
+    selected: n
+
   - title: "Open Dialogue Generation based on knowledge graph"
     image: "/assets/projects/2022_knowledge_graph/fig.png"
     authors: "<b>Subin Kim</b>, Jinhyuk Jang, Sihyeon Kim, Duri Lee"
@@ -59,10 +67,10 @@ projects:
     skill: ""
     selected: n
 
-  - title: "RedWit Internal Payment System"
+  - title: "RedWit Internal Scheduling System"
     image: "/assets/projects/2021_redwit/logo.png"
     authors: "<b>Subin Kim</b>, Chigon Ryu"
-    venue: "RedWit Intern Project 2021"
+    venue: "RedWit Intern Project summer 2021"
     video: "https://www.youtube.com/watch?v=41sPW5eMmkc"
     code: "https://github.com/KSB21ST/2021summer_board"
     skill: ""
