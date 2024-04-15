@@ -26,11 +26,11 @@ papers:
     selected: n
 
   - title: "Analysis of impact on Seoul traffic congestion by Land Use using travel speed and POI"
-  image: "/assets/publications/2021_poi/poi_fig.png"
-  authors: "<b>Subin Kim</b>, Sumin Han, Dongman Lee"
-  venue: "Korea Software Congress (KSC) 2021"
-  paper_pdf: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10582849"
-  selected: n
+    image: "/assets/publications/2021_poi/poi_fig.png"
+    authors: "<b>Subin Kim</b>, Sumin Han, Dongman Lee"
+    venue: "Korea Software Congress (KSC) 2021"
+    paper_pdf: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10582849"
+    selected: n
 
   # - title: "Schema-Driven Information Extraction from Heterogeneous Tables"
   #   image: "/assets/publications/2023_schema-to-json/schema-to-json.png"
