@@ -5,6 +5,7 @@ papers:
     venue: "nCSI WS @ NeurIPS 2022"
     paper_pdf: "https://openreview.net/pdf?id=F4RNpByoqP"
     bibtex: "/assets/publications/2022_playgrounds_for_abstraction/bibtex.txt"
+    poster: "/assets/publications/2022_playgrounds_for_abstraction/poster.pdf"
     selected: y
 
   # - title: "Schema-Driven Information Extraction from Heterogeneous Tables"
