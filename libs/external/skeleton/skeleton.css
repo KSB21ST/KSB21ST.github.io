@@ -162,9 +162,9 @@ a {
   text-decoration: none;
   font-weight: bold; }
 a:hover {
-  color: white;
+  color: #678dab;
   transition: 0.2s ease-in-out;
-  background: #678dab;
+  background: white;
   border-radius: 4px;
   padding: 0 3px; }
 
