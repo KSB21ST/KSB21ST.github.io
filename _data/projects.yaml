@@ -37,6 +37,15 @@ projects:
     skill: ""
     selected: y
 
+  - title: "Tracer: Signature-based Static Analysis for Detecting Recurring Vulnerabilities"
+    image: "/assets/projects/2021_tracer/fig.png"
+    authors: "Wooseok Kang, Byoungho Son*, <b>Subin Kim*</b>, Kihong Heo"
+    venue: "Submitted to ICSE 2022"
+    paper_pdf: "/assets/projects/2021_tracer/paper.pdf"
+    poster: "/assets/projects/2021_tracer/poster.pdf"
+    skill: ""
+    selected: y
+
   - title: "Cheers: Interactive social platform for live-stream baseball game"
     image: "/assets/projects/2021_cheers/fig.png"
     authors: "<b>Subin Kim</b>, Chigon Ryu, Dain Kim, Huikyeong Ann"
