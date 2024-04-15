@@ -1,0 +1,6 @@
+@article{hamed2024dr,
+  title={Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming},
+  author={Hamed, Hany and Kim, Subin and Kim, Dongyeong and Yoon, Jaesik and Ahn, Sungjin},
+  journal={arXiv preprint arXiv:2402.18866},
+  year={2024}
+}

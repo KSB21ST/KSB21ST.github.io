@@ -1,4 +1,12 @@
 papers:
+  - title: "Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming"
+    image: "/assets/publications/2024_Dr_strategy/drstrategy_fig.png"
+    authors: "Hany Hamed*, <b>Subin Kim*</b>, Dongyeong Kim, Jaesik Yoon, Sungjin Ahn"
+    venue: "Under Review at ICML 2024"
+    paper_pdf: "https://arxiv.org/abs/2402.18866"
+    bibtex: "/assets/publications/2024_Dr_strategy/bibtex.txt"
+    selected: y
+
   - title: "Playgrounds for abstraction and reasoning"
     image: "/assets/publications/2022_playgrounds_for_abstraction/arc_fig.png"
     authors: "<b>Subin Kim</b>, Prin Phunyaphibarn, Donghyun Ahn, Sundong Kim"
