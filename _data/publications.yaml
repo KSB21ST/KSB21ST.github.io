@@ -11,6 +11,7 @@ papers:
     image: "/assets/publications/2022_playgrounds_for_abstraction/arc_fig.png"
     authors: "<b>Subin Kim</b>, Prin Phunyaphibarn, Donghyun Ahn, Sundong Kim"
     venue: "nCSI WS @ NeurIPS 2022"
+    venue2: "Korea Software Congress (KSC) 2022 (Best Paper Award)"
     paper_pdf: "https://openreview.net/pdf?id=F4RNpByoqP"
     bibtex: "/assets/publications/2022_playgrounds_for_abstraction/bibtex.txt"
     poster: "/assets/publications/2022_playgrounds_for_abstraction/poster.pdf"

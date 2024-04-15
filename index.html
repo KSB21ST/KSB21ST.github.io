@@ -151,7 +151,7 @@ layout: default
   <h4>Publications</h4>
 
   <!-- <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/> -->
-  <sup>*</sup> indicates equal contribution.
+  * indicates equal contribution.
   </p>
 
   <!-- <ul class="tab-nav">
@@ -174,6 +174,9 @@ layout: default
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
+              {% if paper.venue2 %}
+                <p><i>{{ paper.venue2 }}</i></p>
+              {% endif %}
               <div class="paper-buttons">
                 {% if paper.paper_pdf %}
                   <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
