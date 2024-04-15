@@ -15,6 +15,7 @@ papers:
     paper_pdf: "https://openreview.net/pdf?id=F4RNpByoqP"
     bibtex: "/assets/publications/2022_playgrounds_for_abstraction/bibtex.txt"
     poster: "/assets/publications/2022_playgrounds_for_abstraction/poster.pdf"
+    code: "https://github.com/KSB21ST/MINI-ARC"
     selected: y
 
   # - title: "Schema-Driven Information Extraction from Heterogeneous Tables"
