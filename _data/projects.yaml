@@ -8,7 +8,10 @@ projects:
     image: "/assets/projects/2023_NMix/fig.png"
     authors: "<b>Subin Kim</b>, Kyungwook Nam, Doojin Baek"
     venue: "Deep Reinforcement Learning (Spring 2023) (A+)"
+    proposal: "/assets/projects/2023_NMix/proposal.pdf"
     paper_pdf: "/assets/projects/2023_NMix/paper.pdf"
+    slides: "/assets/projects/2023_NMix/slides.pdf"
+    video: "https://www.youtube.com/watch?v=61BFQD9bpSU"
     code: "https://github.com/KSB21ST/cs492_project"
     skill: ""
     selected: y

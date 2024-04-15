@@ -325,7 +325,7 @@ layout: default
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
-              {% if paper.venue2 %}
+              {% if paper.skill %}
                 <p>Skill: {{ paper.skill }}</p>
               {% endif %}
               <div class="paper-buttons">
@@ -371,6 +371,9 @@ layout: default
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
+              {% if paper.skill %}
+                <p>Skill: {{ paper.skill }}</p>
+              {% endif %}
               <div class="paper-buttons">
                 {% if paper.proposal %}
                   <a class="button" href="{{ paper.proposal }}" target="_blank">Proposal</a>
