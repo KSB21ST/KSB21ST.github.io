@@ -36,3 +36,16 @@ projects:
     code: "https://github.com/KSB21ST/FuzzFrame"
     skill: ""
     selected: y
+
+  - title: "Cheers: Interactive social platform for live-stream baseball game"
+    image: "/assets/projects/2021_cheers/fig.png"
+    authors: "<b>Subin Kim</b>, Chigon Ryu, Dain Kim, Huikyeong Ann"
+    venue: "Artificial Intelligence Based Software Engineering (Fall 2021) <b>(A+)</b>"
+    proposal: "https://docs.google.com/document/d/1gkBTF4djfadPaYtx4Hv80RMXxhXcyf6E/edit"
+    paper_pdf: "https://drive.google.com/file/d/1mwP0UbVTdryot4OMeDM_mx8f5vP-mW37/view?usp=sharing"
+    slides: "https://docs.google.com/presentation/d/1POkyXLcpHaQ2jGqZy7KS2g6HJo6XwvXb/edit#slide=id.p1"
+    video: "https://www.youtube.com/watch?v=mWQXH55Iu4A"
+    code: "https://github.com/KSB21ST/cheers-frontend"
+    code2: "https://github.com/KSB21ST/cheers-backend"
+    skill: ""
+    selected: y
