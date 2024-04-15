@@ -1,0 +1,6 @@
+@inproceedings{kim2022playgrounds,
+  title={Playgrounds for abstraction and reasoning},
+  author={Kim, Subin and Phunyaphibarn, Prin and Ahn, Donghyun and Kim, Sundong},
+  booktitle={NeurIPS 2022 Workshop on Neuro Causal and Symbolic AI (nCSI)},
+  year={2022}
+}
