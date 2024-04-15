@@ -59,6 +59,15 @@ projects:
     skill: ""
     selected: n
 
+  - title: "RedWit Internal Payment System"
+    image: "/assets/projects/2021_redwit/logo.png"
+    authors: "<b>Subin Kim</b>, Chigon Ryu"
+    venue: "RedWit Intern Project 2021"
+    video: "https://www.youtube.com/watch?v=41sPW5eMmkc"
+    code: "https://github.com/KSB21ST/2021summer_board"
+    skill: ""
+    selected: n
+
   - title: "<a href='https://casys-kaist.github.io/pintos-kaist/'>PINTOS-KAIST</a>: operating system framework for the x86-64 architecture (forked from <a href='https://web.stanford.edu/class/cs140/projects/pintos/pintos.html'>stanford pintos project</a>)"
     image: "/assets/projects/2021_pintos/fig.png"
     authors: "<b>Subin Kim</b>, Huikyeong Ann"
