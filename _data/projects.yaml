@@ -4,9 +4,11 @@ projects:
   #   thumbnail: 
   #   url: 
   #   selected: y
-  - title: "Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming"
-    image: "/assets/publications/2024_Dr_strategy/drstrategy_fig.png"
-    authors: "Hany Hamed*, <b>Subin Kim*</b>, Dongyeong Kim, Jaesik Yoon, Sungjin Ahn"
-    venue: "Under Review at ICML 2024"
-    paper_pdf: "https://arxiv.org/abs/2402.18866"
+  - title: "NMix Q-learning: Investigating overestimation bias of Q-values"
+    image: "/assets/projects/2023_NMix/fig.png"
+    authors: "<b>Subin Kim</b>, Kyungwook Nam, Doojin Baek"
+    venue: "Deep Reinforcement Learning (Spring 2023) (A+)"
+    paper_pdf: "/assets/projects/2023_NMix/paper.pdf"
+    code: "https://github.com/KSB21ST/cs492_project"
+    skill: ""
     selected: y

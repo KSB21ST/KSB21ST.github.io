@@ -208,7 +208,7 @@ layout: default
       {% endfor %}
     </div>
 
-    <h6>Domestic</h6>
+    <h4>Domestic</h4>
     </p>
 
     <div class="tab-content">
@@ -326,7 +326,7 @@ layout: default
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
               {% if paper.venue2 %}
-                <p><i>{{ paper.venue2 }}</i></p>
+                <p>Skill: {{ paper.skill }}</p>
               {% endif %}
               <div class="paper-buttons">
                 {% if paper.proposal %}
