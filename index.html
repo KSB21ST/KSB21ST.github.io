@@ -358,7 +358,7 @@ layout: default
         </div>
       {% endfor %}
     </div>
-    <div class="tab-pane" id="papers-all">
+    <div class="tab-pane" id="projects-all">
       {% for paper in site.data.projects.projects %}
         <div class="paper">
           <div class="row">
@@ -375,7 +375,7 @@ layout: default
                 {% if paper.proposal %}
                   <a class="button" href="{{ paper.proposal }}" target="_blank">Proposal</a>
                 {% endif %}
-                
+
                 {% if paper.paper_pdf %}
                   <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
                 {% endif %}
