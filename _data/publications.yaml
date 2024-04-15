@@ -11,12 +11,19 @@ papers:
     image: "/assets/publications/2022_playgrounds_for_abstraction/arc_fig.png"
     authors: "<b>Subin Kim</b>, Prin Phunyaphibarn, Donghyun Ahn, Sundong Kim"
     venue: "nCSI WS @ NeurIPS 2022"
-    venue2: "Korea Software Congress (KSC) 2022 (Best Paper Award)"
+    venue2: "Korea Software Congress (KSC) 2022 <b>(Best Paper Award)</b>"
     paper_pdf: "https://openreview.net/pdf?id=F4RNpByoqP"
     bibtex: "/assets/publications/2022_playgrounds_for_abstraction/bibtex.txt"
     poster: "/assets/publications/2022_playgrounds_for_abstraction/poster.pdf"
     code: "https://github.com/KSB21ST/MINI-ARC"
     selected: y
+
+  - title: "Test Bed for Abstraction and Reasoning"
+    # image: "/assets/publications/2022_playgrounds_for_abstraction/arc_fig.png"
+    authors: "<b>Subin Kim</b>, Prin Phunyaphibarn, Donghyun Ahn, Sundong Kim"
+    venue: "Journal of KIISE, Vol. 51, No. 1, Jan 2024"
+    paper_pdf: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11666593&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=B&readTime=10-15&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true"
+    selected: n
 
   # - title: "Schema-Driven Information Extraction from Heterogeneous Tables"
   #   image: "/assets/publications/2023_schema-to-json/schema-to-json.png"
