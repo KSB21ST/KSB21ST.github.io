@@ -19,11 +19,18 @@ papers:
     selected: y
 
   - title: "Test Bed for Abstraction and Reasoning"
-    # image: "/assets/publications/2022_playgrounds_for_abstraction/arc_fig.png"
+    image: "/assets/publications/2022_playgrounds_for_abstraction/o2arc_fig.png"
     authors: "<b>Subin Kim</b>, Prin Phunyaphibarn, Donghyun Ahn, Sundong Kim"
     venue: "Journal of KIISE, Vol. 51, No. 1, Jan 2024"
     paper_pdf: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11666593&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=B&readTime=10-15&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true"
     selected: n
+
+  - title: "Analysis of impact on Seoul traffic congestion by Land Use using travel speed and POI"
+  image: "/assets/publications/2021_poi/poi_fig.png"
+  authors: "<b>Subin Kim</b>, Sumin Han, Dongman Lee"
+  venue: "Korea Software Congress (KSC) 2021"
+  paper_pdf: "https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10582849"
+  selected: n
 
   # - title: "Schema-Driven Information Extraction from Heterogeneous Tables"
   #   image: "/assets/publications/2023_schema-to-json/schema-to-json.png"
