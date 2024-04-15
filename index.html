@@ -304,7 +304,7 @@ layout: default
 
 <!-- ========== PROJECTS ========== -->
 <div class="docs-section" id="projects">
-  <h4>Projects_temp</h4>
+  <h4>Projects</h4>
   </p>
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
@@ -325,6 +325,9 @@ layout: default
               <p class="title"><b>{{ paper.title }}</b></p>
               <p>{{ paper.authors }}</p>
               <p><i>{{ paper.venue }}</i></p>
+              {% if paper.description %}
+                <p><i>{{ paper.description }}</i></p>
+              {% endif %}
               {% if paper.skill %}
                 <p>Skill: {{ paper.skill }}</p>
               {% endif %}

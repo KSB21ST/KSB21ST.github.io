@@ -49,3 +49,23 @@ projects:
     code2: "https://github.com/KSB21ST/cheers-backend"
     skill: ""
     selected: y
+
+  - title: "<a href='https://casys-kaist.github.io/pintos-kaist/'>PINTOS-KAIST</a>: operating system framework for the x86-64 architecture (forked from <a href='https://web.stanford.edu/class/cs140/projects/pintos/pintos.html'>stanford pintos project</a>)"
+    image: "/assets/projects/2021_pintos/fig.png"
+    authors: "<b>Subin Kim</b>, Huikyeong Ann"
+    venue: "Operating Systems and Lab (Spring 2021) <b>(A)</b>"
+    proposal: "https://casys-kaist.github.io/pintos-kaist/"
+    code: "https://github.com/KSB21ST/2021pintos"
+    description: "Lab1 100/100 (avg 90.3), Lab2 118.24/120 (avg 85.08), Lab3 104.17/115 (avg 68.55), Lab4 133/150 (avg 59.78)"
+    skill: ""
+    selected: y
+
+  - title: "<a href='https://github.com/ANLAB-KAIST/KENSv3'>KENSV3</a>: template for building prototypes of Ethernet/ARP/IP/TCP"
+    image: "/assets/projects/2021_kensv3/fig.png"
+    authors: "<b>Subin Kim</b>, Huikyeong Ann"
+    venue: "Introduction to Computer Networks (Fall 2021) <b>(A)</b>"
+    proposal: "https://github.com/ANLAB-KAIST/KENSv3"
+    code: "https://github.com/KSB21ST/cs341"
+    description: "PA1 7.19/8 (avg 6.57), PA2 7.5/8 (avg 6.62), PA3 6.95/8 (avg 5.18), PA4 9/9 (avg 7.17) + additional score, total 30/30 (avg 24.96)"
+    skill: ""
+    selected: y
