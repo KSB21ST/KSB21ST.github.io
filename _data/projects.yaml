@@ -13,7 +13,7 @@ projects:
     slides: "/assets/projects/2023_NMix/slides.pdf"
     video: "https://www.youtube.com/watch?v=61BFQD9bpSU"
     code: "https://github.com/KSB21ST/cs492_project"
-    skill: ""
+    skill: "Pytorch, Python, Mujoco, Conda, DeepRL"
     selected: y
 
   - title: "Bank Of Wine Internal Payment System"
@@ -21,7 +21,7 @@ projects:
     authors: "<b>Subin Kim</b>"
     venue: "Bank Of Wine Intern Project summer 2022"
     code: "https://github.com/KSB21ST/antD_bankofwine"
-    skill: ""
+    skill: "React, React-Native, AntD UI, HTML, CSS, MongoDB"
     selected: n
 
   - title: "Open Dialogue Generation based on knowledge graph"
@@ -32,7 +32,7 @@ projects:
     paper_pdf: "/assets/projects/2022_knowledge_graph/paper.pdf"
     slides: "/assets/projects/2022_knowledge_graph/slides.pdf"
     video: "https://youtu.be/8bLVMHy6XJ0"
-    skill: ""
+    skill: "Pytorch, Python, Tensorflow, GNN"
     selected: n
   
   - title: "Improving Directed Greybox Fuzzing using Monte-Carlo Decision Tree and Ant Colony Optimization"
@@ -42,7 +42,7 @@ projects:
     paper_pdf: "/assets/projects/2021_fuzzing/paper.pdf"
     slides: "https://docs.google.com/presentation/d/1Sv1OzT0UmHRzG5jWiUAyTqIYtN_Zd18I/edit#slide=id.p1"
     code: "https://github.com/KSB21ST/FuzzFrame"
-    skill: ""
+    skill: "Python, C, LLVM, PL"
     selected: y
 
   - title: "Tracer: Signature-based Static Analysis for Detecting Recurring Vulnerabilities"
@@ -51,7 +51,7 @@ projects:
     venue: "Submitted to ICSE 2022"
     paper_pdf: "/assets/projects/2021_tracer/paper.pdf"
     poster: "/assets/projects/2021_tracer/poster.pdf"
-    skill: ""
+    skill: "Python, C, C++, Docker, PL"
     selected: y
 
   - title: "Cheers: Interactive social platform for live-stream baseball game"
@@ -64,7 +64,7 @@ projects:
     video: "https://www.youtube.com/watch?v=mWQXH55Iu4A"
     code: "https://github.com/KSB21ST/cheers-frontend"
     code2: "https://github.com/KSB21ST/cheers-backend"
-    skill: ""
+    skill: "React, React-Native, HTML, CSS, MongoDB"
     selected: n
 
   - title: "RedWit Internal Scheduling System"
@@ -73,7 +73,7 @@ projects:
     venue: "RedWit Intern Project summer 2021"
     video: "https://www.youtube.com/watch?v=41sPW5eMmkc"
     code: "https://github.com/KSB21ST/2021summer_board"
-    skill: ""
+    skill: "React, React-Native, HTML, CSS, MongoDB"
     selected: n
 
   - title: "<a href='https://casys-kaist.github.io/pintos-kaist/'>PINTOS-KAIST</a>: operating system framework for the x86-64 architecture (forked from <a href='https://web.stanford.edu/class/cs140/projects/pintos/pintos.html'>stanford pintos project</a>)"
@@ -83,7 +83,7 @@ projects:
     proposal: "https://casys-kaist.github.io/pintos-kaist/"
     code: "https://github.com/KSB21ST/2021pintos"
     description: "Lab1 100/100 (avg 90.3), Lab2 118.24/120 (avg 85.08), Lab3 104.17/115 (avg 68.55), Lab4 133/150 (avg 59.78)"
-    skill: ""
+    skill: "C, Linux OS"
     selected: n
 
   - title: "<a href='https://github.com/ANLAB-KAIST/KENSv3'>KENSV3</a>: template for building prototypes of Ethernet/ARP/IP/TCP"
@@ -93,5 +93,5 @@ projects:
     proposal: "https://github.com/ANLAB-KAIST/KENSv3"
     code: "https://github.com/KSB21ST/cs341"
     description: "PA1 7.19/8 (avg 6.57), PA2 7.5/8 (avg 6.62), PA3 6.95/8 (avg 5.18), PA4 9/9 (avg 7.17) + additional score, total 30/30 (avg 24.96)"
-    skill: ""
+    skill: "C++, Docker, Ethernet/IP/TCP"
     selected: n
