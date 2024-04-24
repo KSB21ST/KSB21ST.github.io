@@ -21,7 +21,7 @@ projects:
     authors: "<b>Subin Kim</b>"
     venue: "Bank Of Wine Intern Project summer 2022"
     code: "https://github.com/KSB21ST/antD_bankofwine"
-    skill: "React, React-Native, AntD UI, HTML, CSS, MongoDB"
+    skill: "React, React-Native, AntD UI, HTML, CSS, Javascript, MongoDB"
     selected: n
 
   - title: "Open Dialogue Generation based on knowledge graph"
@@ -64,7 +64,7 @@ projects:
     video: "https://www.youtube.com/watch?v=mWQXH55Iu4A"
     code: "https://github.com/KSB21ST/cheers-frontend"
     code2: "https://github.com/KSB21ST/cheers-backend"
-    skill: "React, React-Native, HTML, CSS, MongoDB"
+    skill: "React, React-Native, HTML, CSS, Javascript, MongoDB"
     selected: n
 
   - title: "RedWit Internal Scheduling System"
@@ -73,7 +73,7 @@ projects:
     venue: "RedWit Intern Project summer 2021"
     video: "https://www.youtube.com/watch?v=41sPW5eMmkc"
     code: "https://github.com/KSB21ST/2021summer_board"
-    skill: "React, React-Native, HTML, CSS, MongoDB"
+    skill: "React, React-Native, HTML, CSS, Javascript, MongoDB"
     selected: n
 
   - title: "<a href='https://casys-kaist.github.io/pintos-kaist/'>PINTOS-KAIST</a>: operating system framework for the x86-64 architecture (forked from <a href='https://web.stanford.edu/class/cs140/projects/pintos/pintos.html'>stanford pintos project</a>)"
