@@ -1,7 +1,7 @@
 papers:
   - title: "Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming"
     image: "/assets/publications/2024_Dr_strategy/drstrategy_fig.png"
-    authors: "Hany Hamed*, <b>Subin Kim*</b>, Dongyeong Kim, Jaesik Yoon, Sungjin Ahn"
+    authors: "{Hany Hamed*, <b>Subin Kim*</b>}, Dongyeong Kim, Jaesik Yoon, Sungjin Ahn"
     venue: "ICML 2024"
     paper_pdf: "https://arxiv.org/abs/2402.18866"
     bibtex: "/assets/publications/2024_Dr_strategy/bibtex.txt"
