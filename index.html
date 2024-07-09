@@ -760,16 +760,14 @@ layout: default
           </div>
           <div class="row" style="margin: inherit;">
             <div class="twelve columns">
-              <p><b>What?</b></p>
-              <ul>
-                <li>How can we make generalist agents that can reach diverse goals without specific training?</li>
-              </ul>
+              <p><b>What?</b>  How can we make generalist agents that can reach diverse goals without specific training, with only pixel-level observation?</p>
               <p><b>How?</b></p>
               <ul>
                 <li><b>Model-Based RL (MBRL)</b> enables the agent to learn its policy within an internal model of the world instead of the real world via planning (Hence, dreaming).</li>
                 <li><b>Divide-and-Conquer strategy</b> improves efficiency by breaking a problem into smaller, more manageable subproblems, solving each independently, and combining their solutions to address the original problem.</li>
+                <li>The agent builds a set of <i>Latent Landmarks</i> during exploration, and then utilizes these to navigate large state spaces.</li>
+                <li>With the <i>highway policy</i>, the agent can first learn in the dream to move to a landmark, and from there it tackles the exploration and achievement task in a more <i>focused way</i>.</li>
               </ul>
-              <p><b>Abstract. </b>Model-based reinforcement learning (MBRL) has been a primary approach to ameliorating the sample efficiency issue as well as to make a generalist agent. However, there has not been much effort toward enhancing the strategy of dreaming itself. Therefore, it is a question whether and how an agent can "dream better" in a more structured and strategic way. In this paper, inspired by the observation from cognitive science suggesting that humans use a spatial divide-and-conquer strategy in planning, we propose a new MBRL agent, called Dr. Strategy, which is equipped with a novel Dreaming Strategy. The proposed agent realizes a version of divide-and-conquer-like strategy in dreaming. This is achieved by learning a set of latent landmarks and then utilizing these to learn a landmark-conditioned highway policy. With the highway policy, the agent can first learn in the dream to move to a landmark, and from there it tackles the exploration and achievement task in a more focused way. In experiments, we show that the proposed model outperforms prior pixel-based MBRL methods in various visually complex and partially observable navigation tasks.</p>
               <p></p>
             </div>
           </div>
