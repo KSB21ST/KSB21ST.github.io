@@ -5,6 +5,7 @@ papers:
     venue: "ICML 2024"
     paper_pdf: "https://arxiv.org/abs/2402.18866"
     bibtex: "/assets/publications/2024_Dr_strategy/bibtex.txt"
+    poster: "/assets/publications/2024_Dr_strategy/drstrategy_poster.pdf"
     selected: y
 
   - title: "Playgrounds for abstraction and reasoning"
