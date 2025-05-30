@@ -1,4 +1,13 @@
 papers:
+  - title: "A Smooth Sea Never Made a Skilled SAILOR:Robust Imitation via Learning to Search"
+    image: "/assets/publications/2025_sailor/sailor_fig.png"
+    authors: "Arnav Kumar Jain, Vibhakar Mohta, <b>Subin Kim</b>, Atiksh Bhardwaj, Juntao Ren, Yunhai Feng, Sanjiban Choudhury, Gokul Swamy"
+    venue: "preprint"
+    paper_pdf: "https://arxiv.org/abs/2402.18866"
+    bibtex: "/assets/publications/2024_Dr_strategy/bibtex.txt"
+    poster: "/assets/publications/2024_Dr_strategy/drstrategy_poster.pdf"
+    selected: y
+    
   - title: "Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming"
     image: "/assets/publications/2024_Dr_strategy/drstrategy_fig.png"
     authors: "{Hany Hamed*, <b>Subin Kim*</b>}, Dongyeong Kim, Jaesik Yoon, Sungjin Ahn"
