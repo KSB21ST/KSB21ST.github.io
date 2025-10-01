@@ -1,7 +1,7 @@
 papers:
   - title: "A Smooth Sea Never Made a Skilled SAILOR:Robust Imitation via Learning to Search"
     image: "/assets/publications/2025_sailor/sailor_fig.png"
-    authors: "Arnav Kumar Jain, Vibhakar Mohta, <b>Subin Kim</b>, Atiksh Bhardwaj, Juntao Ren, Yunhai Feng, Sanjiban Choudhury, Gokul Swamy"
+    authors: "{Arnav Kumar Jain*, Vibhakar Mohta*}, <b>Subin Kim</b>, Atiksh Bhardwaj, Juntao Ren, Yunhai Feng, Sanjiban Choudhury, Gokul Swamy"
     venue: "NeurIPS 2025 (Spotlight)"
     paper_pdf: "https://arxiv.org/abs/2506.05294"
     bibtex: ""
