@@ -174,6 +174,10 @@ layout: default
                   <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
                 {% endif %}
 
+                {% if paper.website %}
+                  <a class="button" href="{{ paper.website }}" target="_blank">Website</a>
+                {% endif %}
+
                 {% if paper.slides %}
                   <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
                 {% endif %}
@@ -224,6 +228,10 @@ layout: default
                 <div class="paper-buttons">
                   {% if paper.paper_pdf %}
                     <a class="button" href="{{ paper.paper_pdf }}" target="_blank">Paper</a>
+                  {% endif %}
+
+                  {% if paper.website %}
+                    <a class="button" href="{{ paper.website }}" target="_blank">Website</a>
                   {% endif %}
   
                   {% if paper.slides %}

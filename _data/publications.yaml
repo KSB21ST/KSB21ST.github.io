@@ -1,4 +1,26 @@
 papers:
+  - title: "Words Are Not Motions: Steering Vision-Language-Action Models with Jacobian Pullbacks"
+    image: "/assets/publications/2026_jackss/openloop_updown_lines.png"
+    authors: "{Qinhe Peng*, <b>Subin Kim*</b>}, Dinesh Jayaraman"
+    venue: "Under Review, 2026"
+    website: "https://jacobianvla.github.io/"
+    selected: y
+
+  - title: "Contrastive Conceptor Activation Steering (COAST): Unlocking Vision-Language-Action Models through Hidden States"
+    image: "/assets/publications/2026_coast/coast_overview.png"
+    authors: "{Miranda Muqing Miao*, <b>Subin Kim*</b>}, Brandon Yang, Lyle Ungar"
+    venue: "Under Review, 2026"
+    paper_pdf: "https://arxiv.org/abs/2605.17144"
+    website: "https://coastvla34-pixel.github.io/"
+    selected: y
+
+  - title: "Zero-Shot VLA Adaptation with Retrieved Guidance"
+    image: "/assets/publications/2026_ragu/ragu_fig.png"
+    authors: "<b>Subin Kim</b>, Anh-Quan Pham, Dinesh Jayaraman"
+    venue: "Under Review, 2026"
+    website: "https://raguvla.github.io/"
+    selected: y
+
   - title: "A Smooth Sea Never Made a Skilled SAILOR:Robust Imitation via Learning to Search"
     image: "/assets/publications/2025_sailor/sailor_fig.png"
     authors: "{Arnav Kumar Jain*, Vibhakar Mohta*}, <b>Subin Kim</b>, Atiksh Bhardwaj, Juntao Ren, Yunhai Feng, Sanjiban Choudhury, Gokul Swamy"
