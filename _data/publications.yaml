@@ -1,6 +1,6 @@
 papers:
   - title: "Words Are Not Motions: Steering Vision-Language-Action Models with Jacobian Pullbacks"
-    image: "/assets/publications/2026_jackss/jackss_overview.pdf"
+    image: "/assets/publications/2026_jackss/jackss_overview.png"
     authors: "{<b>Subin Kim*</b>, Qinhe Peng*}, Dinesh Jayaraman"
     venue: "SPAIS WS @ CoRL 2026"
     venue2: "Awarded Robocurve Travel Grant @ SPAIS WS @ CoRL 2026 (Top 7.6%)"
