@@ -10,7 +10,7 @@ papers:
   - title: "Contrastive Conceptor Activation Steering (COAST): Unlocking Vision-Language-Action Models through Hidden States"
     image: "/assets/publications/2026_coast/coast_overview.png"
     authors: "{Miranda Muqing Miao*, <b>Subin Kim*</b>}, Brandon Yang, Lyle Ungar"
-    venue: "Under Review, 2026"
+    venue: "Mechanistic Interpretability WS @ ICML 2026"
     paper_pdf: "https://arxiv.org/abs/2605.17144"
     website: "https://coastvla34-pixel.github.io/"
     selected: y
