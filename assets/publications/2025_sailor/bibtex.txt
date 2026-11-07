@@ -1,0 +1,8 @@
+@inproceedings{
+  jain2025a,
+  title={A Smooth Sea Never Made a Skilled {SAILOR}: Robust Imitation via Learning to Search},
+  author={Arnav Kumar Jain and Vibhakar Mohta and Subin Kim and Atiksh Bhardwaj and Juntao Ren and Yunhai Feng and Sanjiban Choudhury and Gokul Swamy},
+  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  year={2025},
+  url={https://openreview.net/forum?id=qN5hmLkBtC}
+}

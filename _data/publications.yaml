@@ -13,6 +13,7 @@ papers:
     venue: "Mechanistic Interpretability WS @ ICML 2026"
     paper_pdf: "https://arxiv.org/abs/2605.17144"
     website: "https://coastvla34-pixel.github.io/"
+    code: "https://github.com/COAST-VLA/COAST"
     selected: y
 
   - title: "Zero-Shot VLA Adaptation with Retrieved Guidance"
@@ -26,9 +27,10 @@ papers:
     image: "/assets/publications/2025_sailor/sailor_fig.png"
     authors: "{Arnav Kumar Jain*, Vibhakar Mohta*}, <b>Subin Kim</b>, Atiksh Bhardwaj, Juntao Ren, Yunhai Feng, Sanjiban Choudhury, Gokul Swamy"
     venue: "NeurIPS 2025 (Spotlight)"
+    website: "https://gokul.dev/sailor/"
     paper_pdf: "https://arxiv.org/abs/2506.05294"
-    bibtex: ""
-    poster: "https://arxiv.org/abs/2506.05294"
+    bibtex: "/assets/publications/2025_sailor/bibtex.txt"
+    code: "https://github.com/arnavkj1995/SAILOR"
     selected: y
     
   - title: "Dr. Strategy: Model-Based Generalist Agents with Strategic Dreaming"
@@ -38,6 +40,7 @@ papers:
     paper_pdf: "https://arxiv.org/abs/2402.18866"
     bibtex: "/assets/publications/2024_Dr_strategy/bibtex.txt"
     poster: "/assets/publications/2024_Dr_strategy/drstrategy_poster.pdf"
+    code: "https://github.com/ahn-ml/drstrategy"
     selected: y
 
   - title: "Playgrounds for abstraction and reasoning"
