@@ -1,7 +1,7 @@
 papers:
   - title: "Words Are Not Motions: Steering Vision-Language-Action Models with Jacobian Pullbacks"
     image: "/assets/publications/2026_jackss/openloop_updown_lines.png"
-    authors: "{Subin Kim*, <b>Qinhe Peng*</b>}, Dinesh Jayaraman"
+    authors: "{<b>Subin Kim*</b>, Qinhe Peng*}, Dinesh Jayaraman"
     venue: "Under Review, 2026"
     website: "https://jacobianvla.github.io/"
     selected: y
