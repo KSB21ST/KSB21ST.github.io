@@ -13,6 +13,7 @@ papers:
     venue: "Mechanistic Interpretability WS @ ICML 2026"
     paper_pdf: "https://arxiv.org/abs/2605.17144"
     website: "https://coastvla34-pixel.github.io/"
+    bibtex: "/assets/publications/2026_coast/bibtex.txt"
     code: "https://github.com/COAST-VLA/COAST"
     selected: y
 

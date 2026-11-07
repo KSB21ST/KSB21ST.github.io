@@ -1,0 +1,6 @@
+@article{miao2026contrastive,
+  title={Contrastive Conceptor Activation Steering (COAST): Unlocking Vision-Language-Action Models through Hidden States},
+  author={Miao, Miranda Muqing and Kim, Subin and Yang, Brandon and Ungar, Lyle},
+  journal={arXiv preprint arXiv:2605.17144},
+  year={2026}
+}
