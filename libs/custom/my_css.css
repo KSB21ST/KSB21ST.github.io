@@ -193,3 +193,35 @@ h4 {
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
 }
+/* Collapsible sections
+   –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.toggle-header {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  margin-bottom: 1.5rem;
+  transition: color .15s ease; }
+.toggle-header.open {
+  margin-bottom: 40px; }
+.toggle-header:hover {
+  color: #1EAEDB; }
+.toggle-header:focus {
+  outline: none; }
+.toggle-header:focus-visible {
+  outline: 2px solid #1EAEDB;
+  outline-offset: 3px; }
+.toggle-arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 12px;
+  vertical-align: middle;
+  border-left: 7px solid currentColor;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  transition: -webkit-transform .18s ease;
+  transition: transform .18s ease; }
+.toggle-header.open .toggle-arrow {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
