@@ -21,6 +21,7 @@ papers:
     image: "/assets/publications/2026_ragu/ragu_fig.png"
     authors: "<b>Subin Kim</b>, Anh-Quan Pham, Dinesh Jayaraman"
     venue: "Under Review, 2026"
+    paper_pdf: "https://arxiv.org/abs/2611.10894"
     website: "https://raguvla.github.io/"
     selected: y
 
